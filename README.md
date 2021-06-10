@@ -38,6 +38,8 @@ The infrastructure makes use of the novel "module federation" functionality prov
 
 Think of it like a shopping list for modules: for example, a developer wants to make a semantic enrichment module that allows, in a user-friendly way, to enrich the model with damage data. In addition to her own core-module, she figures an end user will probably need a geometric viewer module, a project tree module and a query module. Using a (to be refined) configuration file, those elements can be fetched from existing applications. When these applications follow the same design patterns, a module can be easily replaced with another one that seems better fit for the purpose. 
 
+The current config file structure (see below for an example) is rather a proof-of-concept. Goals are to be able to generalise this and find better semantic structures to represent the modules (JSON-LD). 
+
 ```
 {
   "viewer1": {
